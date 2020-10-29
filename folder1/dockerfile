@@ -1,0 +1,9 @@
+FROM ubuntu
+
+WORKDIR /usr/project
+
+COPY file.txt ./
+
+RUN cat ./file.txt
+
+ENTRYPOINT ["/bin/bash", "-c", "echo hello"]
